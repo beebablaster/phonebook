@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "ff9cd6d5-5e82-4b85-807c-5c889fd56ef4",
+		"name": "phonebook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Phonebook test requests",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Ne\",\r\n    \"middleName\" : \"Berite\",\r\n    \"lastName\" : \"Tairanarabotu\",\r\n    \"phoneNumber\" : \"+12031203122\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Phonebook test requests",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"Vozmite\",\r\n    \"middleName\" : \"Menya\",\r\n    \"lastName\" : \"Narabotu\",\r\n    \"phoneNumber\" : \"+17381234123\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/contacts/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contacts",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:8080/contacts/6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Apr 2021 23:18:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstName\": \"Vozmite\",\n    \"middleName\": \"Menya\",\n    \"lastName\": \"Narabotu\",\n    \"phoneNumber\": \"+17381234123\",\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/contacts/6\"\n        },\n        \"contact\": {\n            \"href\": \"http://localhost:8080/contacts/6\"\n        }\n    }\n}"
+				},
+				{
+					"name": "Phonebook test requests",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"Ya\",\r\n    \"middleName\" : \"Krutoi\",\r\n    \"lastName\" : \"Chel\",\r\n    \"phoneNumber\" : \"+12031203122\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/contacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:8080/contacts/7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Apr 2021 23:19:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstName\": \"Ya\",\n    \"middleName\": \"Krutoi\",\n    \"lastName\": \"Chel\",\n    \"phoneNumber\": \"+12031203122\",\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/contacts/7\"\n        },\n        \"contact\": {\n            \"href\": \"http://localhost:8080/contacts/7\"\n        }\n    }\n}"
+				},
+				{
+					"name": "Phonebook test requests",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"Ya\",\r\n    \"middleName\" : \"Krutoi\",\r\n    \"lastName\" : \"Chel\",\r\n    \"phoneNumber\" : \"+12031203122\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/contacts/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contacts",
+								"7"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Apr 2021 23:20:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Phonebook test requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/contacts/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contacts",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Apr 2021 23:07:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstName\": \"Damir\",\n    \"middleName\": \"Margulanovich\",\n    \"lastName\": \"Syzdykov\",\n    \"phoneNumber\": \"+77756428495\",\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/contacts/1\"\n        },\n        \"contact\": {\n            \"href\": \"http://localhost:8080/contacts/1\"\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
